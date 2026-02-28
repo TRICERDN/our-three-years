@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Years | Us</title>
+    <style>
+    :root {
+        --bg-color: #faf9f6; 
+        --text-color: #2d2d2d;
+        --accent: #444; /* Darkened for better contrast on the date */
+        --bg-image: url('flo.jpg'); 
+    }
+
+    body {
+        font-family: 'Georgia', serif;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image: var(--bg-image);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(8px);
+        width: 100%;
+    }
+
+    h1 { font-weight: 300; font-size: 3rem; letter-spacing: 4px; margin-bottom: 10px; }
+    
+    /* Darkened Date */
+    .date { 
+        font-style: italic; 
+        color: var(--accent); 
+        font-size: 1.1rem; 
+        font-weight: 600; 
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .collage {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 30px;
+        margin-top: 40px;
+    }
+
+    .photo-card {
+        background: #fff;
+        padding: 15px;
+        /* Bottom-right shadow */
+        box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+        border: none;
+    }
+
+    .photo-card:hover {
+        transform: translateY(-10px) rotate(1deg);
+        box-shadow: 18px 18px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .photo-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .caption {
+        padding: 20px 10px;
+        font-size: 0.95rem;
+        text-align: center;
+        color: #333;
+        border-top: 1px solid #f0f0f0;
+        margin-top: 10px;
+    }
+
+    .letter-section {
+        text-align: center;
+        margin: 120px 0;
+        padding: 60px 15%;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    }
+
+    /* Footer Card Style */
+    .footer-wrapper {
+        text-align: center;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        display: inline-block; /* Only covers the text width */
+        padding: 15px 30px;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        color: #2d2d2d;
+        border-radius: 50px; /* Rounded pill-style card */
+        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 2rem; }
+        .letter-section { padding: 40px 5%; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Three Years.</h1>
+    <p class="date">February 28, 2023 — February 28, 2026</p>
+</header>
+
+<div class="container">
+    <div class="letter-section">
+        <h2>The Evolution</h2>
+        <p>Three years isn't just a measurement of time, it's a collection of moments that built the person I am today — because of you.</p>
+    </div>
+
+    <div class="collage">
+        <div class="photo-card">
+            <img src="062.jpg" alt="First photo">
+            <div class="caption"><strong>The day it all started.</strong><br><br>Even though I didn't want a relationship, it's you who made me believe that it could work. I promise to be with you forever.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="030.jpg" alt="First date">
+            <div class="caption"><strong>Our first date.</strong><br><br>I learned how much you loved beaches and I fell in love with you all over again. Thanks to Sayu for the shot.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="125.jpg" alt="Smile">
+            <div class="caption">Your cute smile is what I love the most.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="091.jpg" alt="Selfie">
+            <div class="caption">Taking cool selfies.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="098.jpg" alt="Expressions">
+            <div class="caption">Your cute expressions.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="099.jpg" alt="Style">
+            <div class="caption">My sexiest look with you XD.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="150.jpg" alt="Adventure">
+            <div class="caption">You looked so cute while others got scared. Truly a stunning look.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="182.jpg" alt="Favorites">
+            <div class="caption">I would say this is my favorite version of us.</div>
+        </div>
+
+        <div class="photo-card">
+            <img src="212.jpg" alt="Growth">
+            <div class="caption"><strong>The moment we felt like home.</strong><br><br>Fights and outbursts only made us closer. I value every step of this journey.</div>
+        </div>
+    </div>
+
+    <div class="letter-section">
+        <p style="font-size: 1.2rem;">To My Future Wife:</p>
+        <p>Thank you for the last 1,095 days and I’m ready for the next 10,000,000 more.</p>
+        <h2 style="color: #8e7d77;">I Love You</h2>
+    </div>
+</div>
+
+<div class="footer-wrapper">
+    <footer>
+        MADE BY YOUR ARIES | FEB 28, 2026
+    </footer>
+</div>
+
+</body>
+</html>
